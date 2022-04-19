@@ -1,4 +1,4 @@
-const selectHour = document.querySelector('h1');
+/* const selectHour = document.querySelector('h1');
 const realTime = new Date();
 
 function formataData(realTime) {
@@ -23,4 +23,8 @@ const formata = formataData(realTime);
 
 
 selectHour.innerHTML = formata;
-console.log(formata);
+console.log(formata); */
+
+const selectHour = document.querySelector('h1');
+const realTime = new Date();
+selectHour.innerHTML = realTime.toLocaleString('pt-BR', {dateStyle: 'full', timeStyle: 'short'});
